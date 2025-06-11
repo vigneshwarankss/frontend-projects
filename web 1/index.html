@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Nagapattinam - Tamil Nadu's Coastal Gem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1585506942812-0b7ab8d50b57?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .place-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.03);
+        }
+        
+        .beach-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="#" class="flex items-center py-4 px-2">
+                            <img src="https://images.unsplash.com/photo-1605540436563-5bca919ae766?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Nagapattinam Logo" class="h-10 w-10 rounded-full mr-2">
+                            <span class="font-semibold text-gray-900 text-lg">Explore Nagapattinam</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#home" class="py-4 px-2 text-green-600 font-semibold">Home</a>
+                    <a href="#places" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-600 transition duration-300">Places</a>
+                    <a href="#beaches" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-600 transition duration-300">Beaches</a>
+                    <a href="#packages" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-600 transition duration-300">Packages</a>
+                    <a href="#testimonials" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-600 transition duration-300">Testimonials</a>
+                    <a href="#contact" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-600 transition duration-300">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero text-white py-32 px-4 md:px-0">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Discover Nagapattinam</h1>
+            <p class="text-xl md:text-2xl mb-8">Where spirituality meets serene beaches and rich cultural heritage</p>
+            <a href="#places" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-green-600 font-semibold tracking-wide uppercase">About Nagapattinam</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Tamil Nadu's Coastal Treasure
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Nagapattinam, a coastal town in Tamil Nadu, is renowned for its religious significance, beautiful beaches, and rich history. A perfect blend of spirituality and natural beauty.
+                </p>
+            </div>
+
+            <div class="mt-20">
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+                    <div class="pt-6">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
+                            <div class="-mt-6">
+                                <div>
+                                    <span class="inline-flex items-center justify-center p-3 bg-green-600 rounded-md shadow-lg">
+                                        <i class="fas fa-church text-white text-2xl"></i>
+                                    </span>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Religious Harmony</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Home to sacred sites of Christianity, Islam, and Hinduism coexisting peacefully.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
+                            <div class="-mt-6">
+                                <div>
+                                    <span class="inline-flex items-center justify-center p-3 bg-green-600 rounded-md shadow-lg">
+                                        <i class="fas fa-umbrella-beach text-white text-2xl"></i>
+                                    </span>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Pristine Beaches</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Miles of untouched coastline offering tranquility and breathtaking sunrises.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
+                            <div class="-mt-6">
+                                <div>
+                                    <span class="inline-flex items-center justify-center p-3 bg-green-600 rounded-md shadow-lg">
+                                        <i class="fas fa-history text-white text-2xl"></i>
+                                    </span>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Historical Legacy</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Once a major Chola port, with archaeological remains dating back centuries.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Places Section -->
+    <section id="places" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-base text-green-600 font-semibold tracking-wide uppercase">Must-Visit</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Popular Tourist Places
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    Explore Nagapattinam's most famous spiritual and historical sites
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Velankanni Church -->
+                <div class="place-card bg-white rounded-lg overflow-hidden shadow-md transition duration-500 ease-in-out">
+                    <img class="w-full h-56 object-cover" src="https://i.pinimg.com/736x/2c/41/56/2c41569290def7306cbe912041a5f755.jpg" alt="Velankanni Church">
+                    <div class="p-6">
+                        <div class="flex items-baseline">
+                            <span class="inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full uppercase font-semibold tracking-wide">Christian</span>
+                            <div class="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide">
+                                15 km from city
+                            </div>
+                        </div>
+                        <h4 class="mt-2 font-semibold text-lg leading-tight truncate">Velankanni Church</h4>
+                        <div class="mt-2 text-gray-600 text-sm">
+                            <i class="fas fa-clock mr-1"></i> Open: 5:30 AM - 9:00 PM
+                            <br>
+                            <i class="fas fa-rupee-sign mr-1"></i> Entry: Free
+                        </div>
+                        <p class="mt-2 text-gray-500">
+                            Our Lady of Good Health, a revered Catholic shrine known as the "Lourdes of the East". Pilgrims believe in the miraculous healing powers of this sacred site.
+                        </p>
+                        <div class="mt-4">
+                            <a href="#" class="text-green-600 hover:text-green-800 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nagore Dargah -->
+                <div class="place-card bg-white rounded-lg overflow-hidden shadow-md transition duration-500 ease-in-out">
+                    <img class="w-full h-56 object-cover" src="https://i.pinimg.com/736x/4b/ed/35/4bed35046af734c2bd7dbd3d31222023.jpg" alt="Nagore Dargah">
+                    <div class="p-6">
+                        <div class="flex items-baseline">
+                            <span class="inline-block bg-blue-200 text-blue-800 text-xs px-2 rounded-full uppercase font-semibold tracking-wide">Islamic</span>
+                            <div class="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide">
+                                5 km from city
+                            </div>
+                        </div>
+                        <h4 class="mt-2 font-semibold text-lg leading-tight truncate">Nagore Dargah</h4>
+                        <div class="mt-2 text-gray-600 text-sm">
+                            <i class="fas fa-clock mr-1"></i> Open: 4:30 AM - 9:30 PM
+                            <br>
+                            <i class="fas fa-rupee-sign mr-1"></i> Entry: Free
+                        </div>
+                        <p class="mt-2 text-gray-500">
+                            A 16th-century Islamic shrine dedicated to Sufi saint Hazrat Syed Shahul Hameed Quadir. Known for its annual 14-day Kanduri festival attracting devotees from all faiths.
+                        </p>
+                        <div class="mt-4">
+                            <a href="#" class="text-green-600 hover:text-green-800 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sikkal Singaravelan Temple -->
+                <div class="place-card bg-white rounded-lg overflow-hidden shadow-md transition duration-500 ease-in-out">
+                    <img class="w-full h-56 object-cover" src="https://i.pinimg.com/736x/30/9e/bf/309ebf4dc35c3f4b127167c303610224.jpg" alt="Sikkal Temple">
+                    <div class="p-6">
+                        <div class="flex items-baseline">
+                            <span class="inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full uppercase font-semibold tracking-wide">Hindu</span>
+                            <div class="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide">
+                                20 km from city
+                            </div>
+                        </div>
+                        <h4 class="mt-2 font-semibold text-lg leading-tight truncate">Sikkal Singaravelan Temple</h4>
+                        <div class="mt-2 text-gray-600 text-sm">
+                            <i class="fas fa-clock mr-1"></i> Open: 6:00 AM - 12:30 PM, 4:00 PM - 8:30 PM
+                            <br>
+                            <i class="fas fa-rupee-sign mr-1"></i> Entry: Free
+                        </div>
+                        <p class="mt-2 text-gray-500">
+                            Famous for Lord Murugan holding a vel (spear), believed to have been worshipped by the Chola kings. The temple comes alive during the Skanda Sashti festival.
+                        </p>
+                        <div class="mt-4">
+                            <a href="#" class="text-green-600 hover:text-green-800 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thirunallar Saneeswaran Temple -->
+                <div class="place-card bg-white rounded-lg overflow-hidden shadow-md transition duration-500 ease-in-out">
+                    <img class="w-full h-56 object-cover" src="https://i.pinimg.com/736x/a9/3d/4f/a93d4fb93eac4b9c2e2ba9529d178e5e.jpg" alt="Thirunallar Temple">
+                    <div class="p-6">
+                        <div class="flex items-baseline">
+                            <span class="inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full uppercase font-semibold tracking-wide">Hindu</span>
+                            <div class="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide">
+                                35 km from city
+                            </div>
+                        </div>
+                        <h4 class="mt-2 font-semibold text-lg leading-tight truncate">Thirunallar Saneeswaran Temple</h4>
+                        <div class="mt-2 text-gray-600 text-sm">
+                            <i class="fas fa-clock mr-1"></i> Open: 5:30 AM - 12:30 PM, 4:00 PM - 9:00 PM
+                            <br>
+                            <i class="fas fa-rupee-sign mr-1"></i> Entry: Free
+                        </div>
+                        <p class="mt-2 text-gray-500">
+                            Dedicated to Lord Shani (Saturn), this temple is believed to alleviate the malefic effects of Saturn. Special abhishekams are performed on Saturdays.
+                        </p>
+                        <div class="mt-4">
+                            <a href="#" class="text-green-600 hover:text-green-800 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soundararajaperumal Temple -->
+                <div class="place-card bg-white rounded-lg overflow-hidden shadow-md transition duration-500 ease-in-out">
+                    <img class="w-full h-56 object-cover" src="https://s.yimg.com/zb/imgv1/f23aba97-8b38-3b5d-918e-94b20f8c6fa5/t_500x300" alt="Soundararajaperumal Temple">
+                    <div class="p-6">
+                        <div class="flex items-baseline">
+                            <span class="inline-block bg-orange-200 text-orange-800 text-xs px-2 rounded-full uppercase font-semibold tracking-wide">Hindu</span>
+                            <div class="ml-2 text-gray-600 text-xs uppercase font-semibold tracking-wide">
+                                10 km from city
+                            </div>
+                        </div>
+                        <h4 class="mt-2 font-semibold text-lg leading-tight truncate">Soundararajaperumal Temple</h4>
+                        <div class="mt-2 text-gray-600 text-sm">
+                            <i class="fas fa-clock mr-1"></i> Open: 6:30 AM - 12:00 PM, 4:30 PM - 8:30 PM
+                            <br>
+                            <i class="fas fa-rupee-sign mr-1"></i> Entry: Free
+                        </div>
+                        <p class="mt-2 text-gray-500">
+                            A beautiful Vaishnavite temple dedicated to Lord Vishnu in his Soundararaja form. The temple architecture showcases exquisite Chola craftsmanship.
+                        </p>
+                        <div class="mt-4">
+                            <a href="#" class="text-green-600 hover:text-green-800 font-semibold text-sm">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tourist Information Center -->
+                <div class="place-card bg-green-700 text-white rounded-lg overflow-hidden shadow-md transition duration-500 ease-in-out flex items-center justify-center">
+                    <div class="p-8 text-center">
+                        <i class="fas fa-info-circle text-5xl mb-4"></i>
+                        <h4 class="text-xl font-bold mb-4">Need More Information?</h4>
+                        <p class="mb-6">Our tourist information center can help you plan your perfect Nagapattinam itinerary.</p>
+                        <a href="#contact" class="bg-white text-green-700 font-bold py-2 px-6 rounded-full transition duration-300 inline-block">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beaches Section -->
+    <section id="beaches" class="beach-bg text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-base text-green-300 font-semibold tracking-wide uppercase">Coastal Beauty</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
+                    Pristine Beaches of Nagapattinam
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-green-100 mx-auto">
+                    Discover serene coastlines perfect for relaxation and breathtaking sunrises
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Velankanni Beach -->
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-6 border border-white border-opacity-20">
+                    <h3 class="text-xl font-bold mb-2">Velankanni Beach</h3>
+                    <p class="text-green-100 mb-4">Adjacent to the famous church, this beach offers spiritual serenity with ocean views.</p>
+                    <div class="flex items-center text-sm">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>15 km from Nagapattinam</span>
+                    </div>
+                    <div class="flex items-center text-sm mt-2">
+                        <i class="fas fa-star mr-2"></i>
+                        <span>Best for: Sunrise views, Pilgrimage extension</span>
+                    </div>
+                </div>
+
+                <!-- Kodinagar Beach -->
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-6 border border-white border-opacity-20">
+                    <h3 class="text-xl font-bold mb-2">Kodinagar Beach</h3>
+                    <p class="text-green-100 mb-4">Less crowded with golden sands, ideal for peaceful walks and photography.</p>
+                    <div class="flex items-center text-sm">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>8 km from Nagapattinam</span>
+                    </div>
+                    <div class="flex items-center text-sm mt-2">
+                        <i class="fas fa-star mr-2"></i>
+                        <span>Best for: Solitude, Bird watching</span>
+                    </div>
+                </div>
+
+                <!-- Poompuhar Beach -->
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-6 border border-white border-opacity-20">
+                    <h3 class="text-xl font-bold mb-2">Poompuhar Beach</h3>
+                    <p class="text-green-100 mb-4">Historic beach near the ancient Chola port city, with a maritime museum nearby.</p>
+                    <div class="flex items-center text-sm">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>30 km from Nagapattinam</span>
+                    </div>
+                    <div class="flex items-center text-sm mt-2">
+                        <i class="fas fa-star mr-2"></i>
+                        <span>Best for: History enthusiasts, Sunset</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-6 border border-white border-opacity-20">
+                    <h3 class="text-xl font-bold mb-4">Beach Safety Tips</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle mt-1 mr-2 text-green-300"></i>
+                            <span>Swim only in designated safe zones</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle mt-1 mr-2 text-green-300"></i>
+                            <span>Beware of strong currents, especially during monsoon</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle mt-1 mr-2 text-green-300"></i>
+                            <span>Carry drinking water and sun protection</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle mt-1 mr-2 text-green-300"></i>
+                            <span>Respect local customs (some beaches near temples may have dress codes)</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-6 border border-white border-opacity-20">
+                    <h3 class="text-xl font-bold mb-4">Best Time to Visit</h3>
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-green-300">November - February</h4>
+                        <p class="text-green-100">Pleasant weather (22°C - 30°C), ideal for beach activities</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-green-300">March - June</h4>
+                        <p class="text-green-100">Hot (28°C - 38°C), early mornings and evenings recommended</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-green-300">July - October</h4>
+                        <p class="text-green-100">Monsoon season, some beaches may have restricted access</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour Packages -->
+    <section id="packages" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-base text-green-600 font-semibold tracking-wide uppercase">Travel Made Easy</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Tour Packages
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    Curated experiences for every type of traveler
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Spiritual Tour -->
+                <div class="border rounded-lg overflow-hidden shadow-lg">
+                    <div class="bg-green-700 text-white p-6 text-center">
+                        <h3 class="text-2xl font-bold">Spiritual Journey</h3>
+                        <div class="mt-4">
+                            <span class="text-4xl font-bold">₹3,999</span>
+                            <span class="text-green-200">/person</span>
+                        </div>
+                        <p class="mt-2 text-green-100">2 Days, 1 Night</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Visit to Velankanni Church, Nagore Dargah, and Sikkal Temple</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>AC accommodation (Twin sharing)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Breakfast and dinner included</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Expert guide for all sites</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>All entry fees and temple donations covered</span>
+                            </li>
+                        </ul>
+                        <button class="mt-8 w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded transition duration-300">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Heritage & Beach -->
+                <div class="border rounded-lg overflow-hidden shadow-lg transform scale-105 z-10">
+                    <div class="bg-green-800 text-white p-6 text-center relative">
+                        <div class="absolute top-0 right-0 bg-yellow-400 text-green-900 text-xs font-bold px-3 py-1 transform translate-x-2 -translate-y-2">POPULAR</div>
+                        <h3 class="text-2xl font-bold">Heritage & Beach</h3>
+                        <div class="mt-4">
+                            <span class="text-4xl font-bold">₹5,499</span>
+                            <span class="text-green-200">/person</span>
+                        </div>
+                        <p class="mt-2 text-green-100">3 Days, 2 Nights</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Coverage of all major temples plus Poompuhar Beach</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>3-star accommodation (Twin sharing)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>All meals included</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Visit to Maritime Museum</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Beachside dinner on final day</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Transport in AC vehicle</span>
+                            </li>
+                        </ul>
+                        <button class="mt-8 w-full bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-4 rounded transition duration-300">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Custom Package -->
+                <div class="border rounded-lg overflow-hidden shadow-lg">
+                    <div class="bg-green-700 text-white p-6 text-center">
+                        <h3 class="text-2xl font-bold">Custom Experience</h3>
+                        <div class="mt-4">
+                            <span class="text-4xl font-bold">Custom</span>
+                            <span class="text-green-200">Pricing</span>
+                        </div>
+                        <p class="mt-2 text-green-100">Tailored to your needs</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Design your own itinerary</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Choose accommodation level (Budget to Luxury)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Add special experiences (Boat rides, Cultural shows)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Private guide and vehicle</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span>Flexible duration</span>
+                            </li>
+                        </ul>
+                        <button class="mt-8 w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded transition duration-300">
+                            Enquire Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-gray-50 rounded-lg p-8">
+                <h3 class="text-2xl font-bold text-center mb-6">Package Inclusions</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-check-circle text-green-600 text-2xl"></i>
+                        </div>
+                        <div class="ml-3">
+                            <h4 class="text-lg font-semibold">All Taxes Included</h4>
+                            <p class="mt-1 text-gray-600">No hidden charges. GST included in all prices.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-check-circle text-green-600 text-2xl"></i>
+                        </div>
+                        <div class="ml-3">
+                            <h4 class="text-lg font-semibold">24/7 Support</h4>
+                            <p class="mt-1 text-gray-600">Local support team available throughout your trip.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <i class="fas fa-check-circle text-green-600 text-2xl"></i>
+                        </div>
+                        <div class="ml-3">
+                            <h4 class="text-lg font-semibold">Flexible Cancellation</h4>
+                            <p class="mt-1 text-gray-600">Free cancellation up to 7 days before travel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-base text-green-600 font-semibold tracking-wide uppercase">Traveler Experiences</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Visitor Testimonials
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    Hear what our visitors say about their Nagapattinam experience
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img class="w-12 h-12 rounded-full mr-4" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Priya K.">
+                        <div>
+                            <h4 class="font-bold">Priya K.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "The spiritual energy of Velankanni Church is unforgettable. We visited during the festival season and the atmosphere was electric. The beach nearby was so peaceful at sunrise."
+                    </p>
+                    <div class="mt-4 text-sm text-gray-500">
+                        <i class="far fa-calendar-alt mr-1"></i> Visited: December 2022
+                    </div>
+                </div>
+
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img class="w-12 h-12 rounded-full mr-4" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Rajesh M.">
+                        <div>
+                            <h4 class="font-bold">Rajesh M.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Nagore Dargah's architecture is stunning. As a photographer, I was amazed by the play of light inside the shrine during different times of day. The local guides were very knowledgeable."
+                    </p>
+                    <div class="mt-4 text-sm text-gray-500">
+                        <i class="far fa-calendar-alt mr-1"></i> Visited: February 2023
+                    </div>
+                </div>
+
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img class="w-12 h-12 rounded-full mr-4" src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Ananya S.">
+                        <div>
+                            <h4 class="font-bold">Ananya S.</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Poompuhar Beach at sunset is magical! The ancient port history adds such depth to the experience. We took the heritage tour package and it was worth every rupee."
+                    </p>
+                    <div class="mt-4 text-sm text-gray-500">
+                        <i class="far fa-calendar-alt mr-1"></i> Visited: November 2022
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="#" class="inline-flex items-center text-green-600 font-semibold">
+                    Read more testimonials
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-base text-green-600 font-semibold tracking-wide uppercase">Need Help?</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Contact Us
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    We're here to help you plan your perfect Nagapattinam trip
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-green-500 focus:border-green-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-green-500 focus:border-green-500">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-green-500 focus:border-green-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-green-500 focus:border-green-500"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded transition duration-300">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <div class="bg-gray-50 p-6 rounded-lg h-full">
+                        <h3 class="text-xl font-bold mb-4">Tourist Information Center</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-green-600 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">Address</h4>
+                                    <p class="text-gray-600">Tourism Complex, Beach Road, Nagapattinam - 611001, Tamil Nadu</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-phone-alt text-green-600 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">Phone</h4>
+                                    <p class="text-gray-600">+91 4365 242 347</p>
+                                    <p class="text-gray-600">Toll Free: 1800 425 4747</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope text-green-600 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">Email</h4>
+                                    <p class="text-gray-600">info@nagapattinamtourism.com</p>
+                                    <p class="text-gray-600">bookings@nagapattinamtourism.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-green-600 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-semibold">Working Hours</h4>
+                                    <p class="text-gray-600">Monday to Saturday: 9:00 AM - 6:00 PM</p>
+                                    <p class="text-gray-600">Sunday: 10:00 AM - 2:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-semibold mb-2">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-gray-600 hover:text-green-600">
+                                    <i class="fab fa-facebook-f text-xl"></i>
+                                </a>
+                                <a href="#" class="text-gray-600 hover:text-green-600">
+                                    <i class="fab fa-twitter text-xl"></i>
+                                </a>
+                                <a href="#" class="text-gray-600 hover:text-green-600">
+                                    <i class="fab fa-instagram text-xl"></i>
+                                </a>
+                                <a href="#" class="text-gray-600 hover:text-green-600">
+                                    <i class="fab fa-youtube text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-6">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Explore Nagapattinam</h3>
+                    <p class="text-gray-400">
+                        Your complete guide to experiencing the spiritual and coastal beauty of Nagapattinam, Tamil Nadu.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#places" class="text-gray-400 hover:text-white transition duration-300">Places to Visit</a></li>
+                        <li><a href="#beaches" class="text-gray-400 hover:text-white transition duration-300">Beaches</a></li>
+                        <li><a href="#packages" class="text-gray-400 hover:text-white transition duration-300">Tour Packages</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Important Info</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">How to Reach</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Best Time to Visit</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Local Transport</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Travel Tips</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">FAQs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">
+                        Subscribe to get updates on special offers and tourist events.
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l focus:outline-none text-gray-900">
+                        <button class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-r">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2023 Explore Nagapattinam. All rights reserved.
+                </p>
+                <div class="mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm mr-4">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm mr-4">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
