@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigneshwaran S | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .card-gradient {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+        }
+        .skill-pill {
+            transition: all 0.3s ease;
+        }
+        .skill-pill:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-slate-900/80 backdrop-blur-md fixed w-full z-10 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold gradient-text">VIGNESHWARAN S</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-slate-300 hover:text-white">Home</a>
+                    <a href="#about" class="nav-link text-slate-300 hover:text-white">About</a>
+                    <a href="#education" class="nav-link text-slate-300 hover:text-white">Education</a>
+                    <a href="#skills" class="nav-link text-slate-300 hover:text-white">Skills</a>
+                    <a href="#experience" class="nav-link text-slate-300 hover:text-white">Experience</a>
+                    <a href="#projects" class="nav-link text-slate-300 hover:text-white">Projects</a>
+                    <a href="#contact" class="nav-link text-slate-300 hover:text-white">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button p-2 rounded-md text-slate-300 hover:text-white hover:bg-slate-700">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-slate-900/95 backdrop-blur-md">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Home</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">About</a>
+                <a href="#education" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Education</a>
+                <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Skills</a>
+                <a href="#experience" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Experience</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Projects</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Hi, I'm <span class="gradient-text">Vigneshwaran S</span></h1>
+                <h2 class="text-2xl md:text-3xl text-slate-400 mb-6">Cyber Security & Web Developer</h2>
+                <p class="text-lg text-slate-400 mb-8">Technically skilled professional with expertise in cyber security, Python, and web development. Passionate about creating innovative technology solutions.</p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg text-white font-medium hover:opacity-90 transition">Contact Me</a>
+                    <a href="#projects" class="px-6 py-3 border border-slate-600 rounded-lg text-white font-medium hover:bg-slate-800 transition">View Projects</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-slate-700">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 opacity-20"></div>
+                    <!-- Replace with your actual image -->
+                    <img src="WhatsApp Image 2025-02-18 at 15.45.19_f363d1c9.jpg" alt="Vigneshwaran S" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4"><span class="gradient-text">About Me</span></h2>
+            <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+        </div>
+        <div class="card-gradient rounded-2xl p-8 shadow-xl">
+            <p class="text-lg text-slate-300 leading-relaxed">
+                Technically skilled in cyber security, Python, HTML, CSS, and JavaScript, with a solid background in web development and automation. Member of Tech Nest, project management, with a focus on creating impactful and innovative technology solutions.
+            </p>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="flex items-start">
+                    <div class="bg-slate-800 p-3 rounded-lg mr-4">
+                        <i class="fas fa-shield-alt text-blue-400 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Cyber Security</h3>
+                        <p class="text-slate-400">Specialized in threat identification, vulnerability assessment, and penetration testing.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-slate-800 p-3 rounded-lg mr-4">
+                        <i class="fas fa-code text-purple-400 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+                        <p class="text-slate-400">Experienced in building responsive and interactive web applications.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-slate-800 p-3 rounded-lg mr-4">
+                        <i class="fab fa-python text-green-400 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Python Programming</h3>
+                        <p class="text-slate-400">Skilled in Python for automation, data analysis, and machine learning applications.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-slate-800 p-3 rounded-lg mr-4">
+                        <i class="fas fa-project-diagram text-yellow-400 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-2">Project Management</h3>
+                        <p class="text-slate-400">Experienced in managing technology projects from conception to implementation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4"><span class="gradient-text">Education</span></h2>
+            <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+        </div>
+        <div class="space-y-8">
+            <div class="card-gradient rounded-2xl p-8 shadow-xl">
+                <div class="flex flex-col md:flex-row justify-between">
+                    <div class="mb-4 md:mb-0">
+                        <h3 class="text-2xl font-semibold mb-2">BE - Computer Science and Engineering</h3>
+                        <p class="text-slate-400">ARIFA INSTITUTE OF TECHNOLOGY</p>
+                    </div>
+                    <div class="bg-slate-800 px-4 py-2 rounded-lg self-start">
+                        <span class="text-blue-400 font-medium">2022–2025</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-gradient rounded-2xl p-8 shadow-xl">
+                <div class="flex flex-col md:flex-row justify-between">
+                    <div class="mb-4 md:mb-0">
+                        <h3 class="text-2xl font-semibold mb-2">Diploma in Civil Engineering</h3>
+                        <p class="text-slate-400">ARIFA POLYTECHNIC COLLEGE</p>
+                    </div>
+                    <div class="bg-slate-800 px-4 py-2 rounded-lg self-start">
+                        <span class="text-blue-400 font-medium">2020–2022</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4"><span class="gradient-text">Skills</span></h2>
+            <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div class="skill-pill bg-slate-800 rounded-full py-3 px-6 text-center">
+                <span class="text-blue-400 font-medium">Python</span>
+            </div>
+            <div class="skill-pill bg-slate-800 rounded-full py-3 px-6 text-center">
+                <span class="text-purple-400 font-medium">HTML/CSS</span>
+            </div>
+            <div class="skill-pill bg-slate-800 rounded-full py-3 px-6 text-center">
+                <span class="text-yellow-400 font-medium">JavaScript</span>
+            </div>
+            <div class="skill-pill bg-slate-800 rounded-full py-3 px-6 text-center">
+                <span class="text-red-400 font-medium">Cyber Security</span>
+            </div>
+            <div class="skill-pill bg-slate-800 rounded-full py-3 px-6 text-center">
+                <span class="text-green-400 font-medium">Project Management</span>
+            </div>
+            <div class="skill-pill bg-slate-800 rounded-full py-3 px-6 text-center">
+                <span class="text-blue-400 font-medium">Networks</span>
+            </div>
+            <div class="skill-pill bg-slate-800 rounded-full py-3 px-6 text-center">
+                <span class="text-purple-400 font-medium">Git</span>
+            </div>
+            <div class="skill-pill bg-slate-800 rounded-full py-3 px-6 text-center">
+                <span class="text-yellow-400 font-medium">GitHub</span>
+            </div>
+            <div class="skill-pill bg-slate-800 rounded-full py-3 px-6 text-center">
+                <span class="text-red-400 font-medium">Prompt Engineering</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4"><span class="gradient-text">Work Experience</span></h2>
+            <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+        </div>
+        <div class="card-gradient rounded-2xl p-8 shadow-xl">
+            <div class="flex flex-col md:flex-row justify-between mb-6">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-2">Cyber Security Intern</h3>
+                    <p class="text-slate-400">ELiteTech Intern | Remote</p>
+                </div>
+                <div class="bg-slate-800 px-4 py-2 rounded-lg mt-4 md:mt-0">
+                    <span class="text-blue-400 font-medium">Mar 2025 – May 2025</span>
+                </div>
+            </div>
+            <ul class="list-disc list-inside text-slate-300 space-y-2 pl-4">
+                <li>Completed an intensive 8-week internship focused on threat identification, vulnerability assessment, and basic penetration testing.</li>
+                <li>Worked on real-world scenarios to detect and mitigate common security risks.</li>
+                <li>Received outstanding performance remarks for attention to detail and quick learning.</li>
+                <li>Improved report writing and gained a deeper understanding of ethical hacking and cybersecurity frameworks.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4"><span class="gradient-text">Projects</span></h2>
+            <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+        </div>
+        <div class="card-gradient rounded-2xl p-8 shadow-xl">
+            <h3 class="text-2xl font-semibold mb-2">Fake Profile Detection System</h3>
+            <p class="text-slate-400 mb-4">Fake Profile Identification in Social Networks Using Machine Learning</p>
+            <div class="flex flex-wrap gap-2 mb-6">
+                <span class="bg-slate-800 px-3 py-1 rounded-full text-sm text-blue-400">Python</span>
+                <span class="bg-slate-800 px-3 py-1 rounded-full text-sm text-purple-400">SVM</span>
+                <span class="bg-slate-800 px-3 py-1 rounded-full text-sm text-yellow-400">HTML/CSS</span>
+                <span class="bg-slate-800 px-3 py-1 rounded-full text-sm text-red-400">PHP</span>
+                <span class="bg-slate-800 px-3 py-1 rounded-full text-sm text-green-400">MySQL</span>
+                <span class="bg-slate-800 px-3 py-1 rounded-full text-sm text-blue-400">Blockchain</span>
+                <span class="bg-slate-800 px-3 py-1 rounded-full text-sm text-purple-400">Aadhar API</span>
+                <span class="bg-slate-800 px-3 py-1 rounded-full text-sm text-yellow-400">Dreamweaver</span>
+            </div>
+            <div class="mb-6">
+                <div class="flex items-center mb-2">
+                    <span class="bg-slate-800 px-3 py-1 rounded-lg text-sm font-medium mr-4">Duration:</span>
+                    <span class="text-slate-300">Mar 2025 – May 2025</span>
+                </div>
+                <div class="flex items-center">
+                    <span class="bg-slate-800 px-3 py-1 rounded-lg text-sm font-medium mr-4">Role:</span>
+                    <span class="text-slate-300">Developer / Team Member</span>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-xl font-semibold mb-3 text-slate-300">Description:</h4>
+                <ul class="list-disc list-inside text-slate-300 space-y-2 pl-4">
+                    <li>Developed a web-based application using Support Vector Machine (SVM) classification.</li>
+                    <li>Integrated Aadhar-based verification and IP address matching for identity validation.</li>
+                    <li>Designed and implemented four core modules: OSN framework, age estimation, fake account classification, and information-sharing control.</li>
+                    <li>Enhanced privacy through content filtering and vote-based privacy control.</li>
+                    <li>Proposed a blockchain-based system for secure identity verification.</li>
+                    <li>Improved detection accuracy via profile attribute and behavior analysis.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4"><span class="gradient-text">Certifications</span></h2>
+            <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="card-gradient rounded-2xl p-6 shadow-xl">
+                <h3 class="text-xl font-semibold mb-3">Web Technology Full Stack using Django</h3>
+                <p class="text-slate-400 mb-4">TNSDC Naan Muthalvan</p>
+                <div class="bg-slate-800 px-3 py-1 rounded-lg inline-block">
+                    <span class="text-blue-400 text-sm">Completed</span>
+                </div>
+            </div>
+            <div class="card-gradient rounded-2xl p-6 shadow-xl">
+                <h3 class="text-xl font-semibold mb-3">SQL Injection Attacks Course</h3>
+                <p class="text-slate-400 mb-4">EC Council</p>
+                <div class="bg-slate-800 px-3 py-1 rounded-lg inline-block">
+                    <span class="text-blue-400 text-sm">Completed</span>
+                </div>
+            </div>
+            <div class="card-gradient rounded-2xl p-6 shadow-xl">
+                <h3 class="text-xl font-semibold mb-3">Cybersecurity Course</h3>
+                <p class="text-slate-400 mb-4">Tech Mahindra Foundation through Skill India Digital Hub</p>
+                <div class="bg-slate-800 px-3 py-1 rounded-lg inline-block">
+                    <span class="text-blue-400 text-sm">Completed</span>
+                </div>
+            </div>
+            <div class="card-gradient rounded-2xl p-6 shadow-xl">
+                <h3 class="text-xl font-semibold mb-3">Python</h3>
+                <p class="text-slate-400 mb-4">GUVI</p>
+                <div class="bg-slate-800 px-3 py-1 rounded-lg inline-block">
+                    <span class="text-blue-400 text-sm">Completed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4"><span class="gradient-text">Contact Me</span></h2>
+            <div class="w-20 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="card-gradient rounded-2xl p-8 shadow-xl">
+                <h3 class="text-2xl font-semibold mb-6">Get in Touch</h3>
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="bg-slate-800 p-3 rounded-lg mr-4">
+                            <i class="fas fa-envelope text-blue-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-medium mb-1">Email</h4>
+                            <a href="mailto:kssvikcy6@gmail.com" class="text-slate-400 hover:text-white">kssvicky6@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-slate-800 p-3 rounded-lg mr-4">
+                            <i class="fab fa-linkedin text-blue-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-medium mb-1">LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/vigneshwaran-s-2475362a2com" target="_blank" class="text-slate-400 hover:text-white">linkedin.com/in/vigneshwaran-s</a>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-slate-800 p-3 rounded-lg mr-4">
+                            <i class="fas fa-map-marker-alt text-red-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-medium mb-1">Location</h4>
+                            <p class="text-slate-400">Mannargudi, Thiruvarur, Tamil Nadu</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-slate-800 p-3 rounded-lg mr-4">
+                            <i class="fas fa-phone text-green-400"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-medium mb-1">Phone</h4>
+                            <a href="tel:+916369220562" class="text-slate-400 hover:text-white">+91 6369220562</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-gradient rounded-2xl p-8 shadow-xl">
+                <h3 class="text-2xl font-semibold mb-6">Send Me a Message</h3>
+                <form>
+                    <div class="mb-6">
+                        <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg text-white font-medium hover:opacity-90 transition">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900/80 backdrop-blur-md border-t border-slate-800 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <span class="text-xl font-bold gradient-text">VIGNESHWARAN S</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="mailto:kssvikcy6@gmail.com" class="text-slate-400 hover:text-white">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vigneshwaran-s-2475362a2com" target="_blank" class="text-slate-400 hover:text-white">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="tel:+916369220562" class="text-slate-400 hover:text-white">
+                        <i class="fas fa-phone text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-slate-500 text-sm">
+                <p>© 2023 Vigneshwaran S. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
